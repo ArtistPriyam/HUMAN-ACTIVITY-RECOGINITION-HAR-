@@ -16,7 +16,7 @@ The goal of this project is to develop and deploy a deep learning-based pipeline
 
 ---
 
-## 2. 🔍 Motivation
+## 2. importance 
 
 * Traditional RGB-based activity recognition fails in low-light or obscured scenarios.
 * Thermal cameras are increasingly used in security, defense, and industrial environments.
