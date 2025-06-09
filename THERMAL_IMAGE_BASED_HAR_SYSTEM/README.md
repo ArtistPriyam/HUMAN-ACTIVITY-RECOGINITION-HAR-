@@ -102,6 +102,7 @@ Predicted Activity Label (e.g., running, sitting, jumping)
 ### How it Works:
 
 ```bash
+pip install - e .
 $ python app.py
 # Opens http://127.0.0.1:5000
 ```

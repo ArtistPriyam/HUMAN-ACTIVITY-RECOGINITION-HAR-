@@ -26,8 +26,8 @@ label_map = {
 }
 
 pipeline = HAR_Predictor(
-    yolo_model_path="artifacts/weights/best.pt",
-    classifier_path="artifacts/classifiers/mlp.pkl",
+    yolo_model_path="models/best.pt" ,         #"artifacts/weights/best.pt",
+    classifier_path= "models/mlp.pkl",           #"artifacts/classifiers/mlp.pkl",
     label_map=label_map
 )
 
