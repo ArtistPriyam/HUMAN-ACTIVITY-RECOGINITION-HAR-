@@ -1,0 +1,23 @@
+keypoints:
+- kp0
+- kp1
+- kp2
+- kp3
+- kp4
+- kp5
+- kp6
+- kp7
+- kp8
+- kp9
+- kp10
+- kp11
+- kp12
+- kp13
+- kp14
+- kp15
+- kp16
+names:
+- person
+nc: 1
+train: artifacts/OPEN_THERMAL_IMAGE/train/images
+val: artifacts/OPEN_THERMAL_IMAGE/val/images

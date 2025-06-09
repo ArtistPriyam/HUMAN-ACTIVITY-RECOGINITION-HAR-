@@ -1,0 +1,7 @@
+Method,Suggested k
+ANOVA,18
+ChiSquared,28
+RFE,1
+ForwardSelection,10
+RandomForestImportance,22
+DecisionTreeImportance,10

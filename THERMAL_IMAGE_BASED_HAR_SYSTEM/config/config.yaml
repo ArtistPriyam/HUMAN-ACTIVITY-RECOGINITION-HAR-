@@ -1,0 +1,31 @@
+artifacts_root: artifacts
+
+
+data_ingestion:
+  root_dir: artifacts/data_ingestion
+  source_URL2: https://drive.google.com/file/d/1C5ThcFZm1twYtEta8GWUe1SENc9ER_0t/view?usp=sharing
+  source_URL: https://drive.google.com/file/d/1BDVprz9NtenCp3wDovA2lfKVBzJDCTt2/view?usp=sharing
+  local_data_file: artifacts/data_ingestion/data_2.zip
+  unzip_dir: artifacts/data_ingestion_2
+
+
+
+prepare_base_model:
+  root_dir: artifacts/prepare_base_model
+  base_model_path: artifacts/prepare_base_model/base_model.h5
+  updated_base_model_path: artifacts/prepare_base_model/base_model_updated.h5
+
+
+
+
+prepare_callbacks:
+  root_dir: artifacts/prepare_callbacks
+  tensorboard_root_log_dir: artifacts/prepare_callbacks/tensorboard_log_dir
+  checkpoint_model_filepath: artifacts/prepare_callbacks/checkpoint_dir/model.h5
+
+
+
+
+training:
+  root_dir: artifacts/training
+  trained_model_path: artifacts/training/model.h5
