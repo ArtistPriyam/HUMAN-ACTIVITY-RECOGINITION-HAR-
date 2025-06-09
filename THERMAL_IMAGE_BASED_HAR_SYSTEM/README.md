@@ -170,12 +170,12 @@ THERMAL_IMAGE_BASED_HAR_SYSTEM/
 ├── config/                           # Configuration files (optional YAMLs, params)
 ├── logs/                             # Logging files during training or inference
 ├── research/                         # Jupyter notebooks for experimentation and results
-│   ├── 01_data_ingestion.ipynb
-│   ├── DL_MODEL_TRAINING.ipynb
-│   ├── ML_CLASSIFIER_MODELS_TRAINING.ipynb
-│   ├── PREDICTION.ipynb
-│   ├── YOLOv8_model_training.ipynb
-│   └── trials.ipynb
+│   ├── 01_data_ingestion.ipynb       # data ingestion
+│   ├── DL_MODEL_TRAINING.ipynb       # lstm model training
+│   ├── ML_CLASSIFIER_MODELS_TRAINING.ipynb # mlp classifer and random forest training 
+│   ├── PREDICTION.ipynb 
+│   ├── YOLOv8_model_training.ipynb   # training YOLOv8_model 
+│   └── trials.ipynb                  # labelling tools code 
 ├── src/                              # Source code
 │   └── predict.py                    # HAR_Predictor class for inference
 ├── static/                           # Static assets (images, CSS, etc.)
@@ -198,3 +198,43 @@ THERMAL_IMAGE_BASED_HAR_SYSTEM/
 * `static/uploads/` and `templates/index.html` support the Flask frontend.
 * `artifacts/` holds model artifacts created during training and testing.
 * `app.py` is the entry point for the deployed web application.
+
+
+# 🔖 Activity Labeling
+
+To train the classifier, each image is assigned an activity label. These labels are saved in `activity_labels.csv`, which is used during training. Labeling was performed using a custom tool provided in:
+
+> 📄 `research/utils.ipynb`
+> 🛠️ `labeling_tool.py`
+
+---
+
+### 🛠️ labeling\_tool.py – Quick Labeling Utility
+
+**Purpose:**
+Display thermal images one-by-one and assign activity labels via keyboard input.
+
+**How to Run:**
+
+```bash
+python labeling_tool.py
+```
+
+**Key Controls:**
+
+| Keys   | Action                |
+| ------ | --------------------- |
+| 1–9, 0 | Assign activity label |
+| k      | Skip image            |
+| Esc    | Exit tool             |
+
+**Output Files:**
+
+* `activity_labels.csv` – Class index to label mapping
+* `activity_labels_train.csv` – Image path and label pairs for training
+**Directory to Label:**
+Ensure this path is correctly set:
+
+```python
+DATA_DIR = "artifacts/OPEN_THERMAL_IMAGE/val/images"
+``
