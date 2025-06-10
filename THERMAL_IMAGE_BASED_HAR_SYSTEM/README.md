@@ -103,27 +103,6 @@ pip install - e .
 $ python app.py
 # Opens http://127.0.0.1:5000
 ```
-
-### UI Screenshot (example):
-
-```
-| [Upload Box]                  |
-| [Submit]                      |
-| ---------------------------  |
-| 🔍 Predicted: SITTING_STANDING |
-| [Image Preview]               |
-```
-
----
-
-## 9. 🧪 Testing
-
-* All test images stored in `artifacts/TEST/`
-* HAR\_Predictor batch tested for accuracy and robustness.
-* Handles error cases: no person detected, corrupt image, etc.
-
----
-
 ## 10. 📊 Future Improvements
 
 * Deploy using Docker + Gunicorn or Render.
@@ -147,13 +126,6 @@ $ python app.py
 ```bash
 pip install ultralytics scikit-learn opencv-python flask
 ```
-
-### 🔸 Model Training and data ingestion Scripts
-in python notebook resarch 
-
-* YOLOv8 training: `yolo task=pose mode=train ...`
-
----
 
 ## Project Directory Structure
 
@@ -195,7 +167,7 @@ THERMAL_IMAGE_BASED_HAR_SYSTEM/
 * `static/uploads/` and `templates/index.html` support the Flask frontend.
 * `artifacts/` holds model artifacts created during training and testing.
 * `app.py` is the entry point for the deployed web application.
-
+----------------------------------------------------------------------------------------
 
 # 🔖 Activity Labeling
 
