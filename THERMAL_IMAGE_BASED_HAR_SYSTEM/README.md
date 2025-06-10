@@ -1,6 +1,3 @@
-Here's a **detailed project report** for your **Thermal Image-Based Human Activity Recognition (HAR)** pipeline, ready to use for documentation, reports, or submission purposes.
-
----
 
 ## Thermal Image-Based Human Activity Recognition (HAR)
 
