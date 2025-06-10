@@ -169,7 +169,7 @@ THERMAL_IMAGE_BASED_HAR_SYSTEM/
 * `app.py` is the entry point for the deployed web application.
 ----------------------------------------------------------------------------------------
 
-# 🔖 Activity Labeling
+# 🔖 Activity Labeling(CODE IN UTILS.ipynb file)
 
 To train the classifier, each image is assigned an activity label. These labels are saved in `activity_labels.csv`, which is used during training. Labeling was performed using a custom tool provided in:
 
